@@ -147,29 +147,19 @@ FIM
 
 #### Teste de mesa (1 ponto)
 
-| Passo         | Entrada/Saída                         | Variáveis/Valores          | 
-|---------------|---------------------------------------|----------------------------| 
-| 1             | Entrada                               |                            |
-| 2             | Digite a primeira nota:               |                            |
-|               |                                       |                            |
-| 3             | Entrada                               | nota1                      |
-| 4             | Digite a segunda nota:                |                            |
-|               |                                       |                            |
-| 5             | Entrada                               | nota2                      |
-| 6             | Verifica se nota1 e nota2 são válidas | nota1, nota2               |
-|               |                                       |                            |
-| 7             | Se verdadeiro                         |                            |
-| 8             | Cálculo da média                      | média = (nota1 + nota2)/2  |
-| 9             | Verifica se média >= 7                | média                      |
-| 10            | Se verdadeiro                         |                            |
-| 11            | Saída                                 | "Aluno aprovado!"          |
-| 12            | Fim                                   |                            |
-| 10            | Se falso                              |                            |
-| 11            | Saída                                 | "Aluno reprovado!"         |
-| 12            | Fim                                   |                            |
-| 7             | Se falso                              |                            |
-| 8             | Saída                                 | "Notas inválidas!"         |
-| 9             | Fim                                   |                            |
+| Etapa | Cenário Aprovado | Cenário Reprovado |
+|-------|------------------|-------------------|
+| A. Início | Iniciado | Iniciado |
+| B. "Digite a primeira nota: " | 8 | 4 |
+| C. Primeira nota | 8 | 4 |
+| D. "Digite a segunda nota: " | 9 | 5 |
+| E. Segunda nota | 9 | 5 |
+| F. Notas válidas? | Sim (Continua) | Sim (Continua) |
+| G. Cálculo da média | Média = (8+9)/2 = 8.5 | Média = (4+5)/2 = 4.5 |
+| H. Média >= 7? | Sim | Não |
+| I. "Aluno aprovado!" (Se H é verdadeiro) | Mostra "Aluno aprovado!" | N/A |
+| K. "Aluno reprovado!" (Se H é falso) | N/A | Mostra "Aluno reprovado!" |
+| J. Fim | Fim | Fim |
 
 ## Exercício 04 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo que, a partir da idade do candidato(a), determinar se pode ou não tirar a CNH. 
